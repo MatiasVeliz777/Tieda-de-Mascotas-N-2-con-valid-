@@ -56,13 +56,32 @@
                                 style="background-color: transparent; border-color: transparent;">
                                 <section class="login">
                                     <h5> Inicio De sesion</h5>
-                                    <label for="exampleInputEmail1" class="form-label">Usuario o correo
-                                        Electronico</label>
-                                    <input class="xd" type="text" name="usuario" value="" Jesus="Usuario">
-                                    <label for="exampleInputpassword" class="form-label">Contraseña</label>
-                                    <input class="xd" type="password" name="contrasena" value="" Jesus18="Contraseña">
-                                    <input class="but" type="button" name="" value="Ingresar">
-                                    <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
+                                    <form action="" class="formulario" id="formulario">
+                                        <div class="formulario-grupo" id="grupo-usuario">
+                                            <label for="usuario" class="formulario-label">usuario</label>
+                                            <div class="formulario-grupo-input">
+                                                <input type="text" class="formulario-input" name="usuario" id="usuario"
+                                                    placeholder="usuario">
+                                                <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                                            </div>
+                                            <p class="formulario-input-error">El usuario tiene que ser de 4 a 16
+                                                dígitos y solo puede contener letras, numeros y guion bajo</p>
+                                        </div>
+                                        <!-- Grupo: contraseña -->
+                                        <div class="formulario-grupo" id="grupo-password">
+                                            <label for="password" class="formulario-label">contraseña</label>
+                                            <div class="formulario-grupo-input">
+                                                <input type="password" class="formulario-input" name="password"
+                                                    id="password" placeholder="contraseña">
+                                                <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                                            </div>
+                                            <p class="formulario-input-error">La contraseña tiene que ser de 4 a 12
+                                                dígitos.</p>
+                                        </div>
+                                        <div id="botoniniciar" style="display: flex; justify-content: center;">
+                                        <button type="submit" class="formulario-btn" style="width: 170px;">Inicar Sesion</button>
+                                        </div>
+                                </form>
                                 </section>
                             </div>
                         </div>
