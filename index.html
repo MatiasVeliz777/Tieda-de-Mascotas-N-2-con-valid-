@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Paws</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="Imagenes/saco_comida1.png">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <div id="principal">
+        <div id="header">
+            <div id="logo">
+                <img src="imagenes/Paw-patrol.png" alt="logo">
+            </div>
+            <div id="modals">
+                <div class="boton-menu">
+                    <button type="submit" class="btn btn-btn-light">
+                        <a href="index.html">Inicio</a>
+                    </button>
+                </div>
+                <div class="boton-menu">
+                    <button type="submit" class="btn btn-btn-light">
+                        <a href="catalogo-prod.html">Productos</a>
+                    </button>
+                </div>
+                <div class="boton-menu">
+                    <button type="submit" class="btn btn-btn-light">
+                        <a href="subscripciones.html">Suscripcion</a>
+                    </button>
+                </div>
+                <div class="boton-menu">
+                    <!-- Button trigger modal -->
+                    <button type="submit" class="btn btn-btn-light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <a href="#">Inicar sesion</a>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="none" aria-labelledby="none" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content"
+                                style="background-color: transparent; border-color: transparent;">
+                                <section class="login">
+                                    <h5> Inicio De sesion</h5>
+                                    <label for="exampleInputEmail1" class="form-label">Usuario o correo
+                                        Electronico</label>
+                                    <input class="xd" type="text" name="usuario" value="" Jesus="Usuario">
+                                    <label for="exampleInputpassword" class="form-label">Contraseña</label>
+                                    <input class="xd" type="password" name="contrasena" value="" Jesus18="Contraseña">
+                                    <input class="but" type="button" name="" value="Ingresar">
+                                    <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boton-menu">
+                    <!-- Button trigger modal -->
+                    <button type="submit" class="btn btn-btn-light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">
+                        <a href="#"> Registrarse</a>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="none" aria-labelledby="none"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content"
+                                style="background-color: transparent; border-color: transparent;">
+                                <section class="Register">
+                                    <h2>Registrate</h2>
+                                    <form action="" class="formulario" id="formulario">
+                                        <!-- Grupo: Nombre -->
+                                        <div class="formulario-grupo" id="grupo-nombre">
+                                            <label for="nombre" class="formulario-label">Nombre</label>
+                                            <div class="formulario-grupo-input">
+                                                <input type="text" class="formulario-input" name="nombre" id="nombre"
+                                                    placeholder="Igresa nombre">
+                                                <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                                            </div>
+                                            <p class="formulario-input-error">El nombre tiene que ser de 1 a 30
+                                                dígitos y solo puede contener letras y numeros</p>
+                                        </div>
+                                        <!-- Grupo: apellido -->
+                                        <div class="formulario-grupo" id="grupo-apellido">
+                                            <label for="apellido" class="formulario-label">apellido</label>
+                                            <div class="formulario-grupo-input">
+                                                <input type="text" class="formulario-input" name="apellido"
+                                                    id="apellido" placeholder="Igresa apellidos">
+                                                <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                                            </div>
+                                            <p class="formulario-input-error">El apellido tiene que ser de 1 a 30
+                                                dígitos y solo puede contener letras y numeros</p>
+                                        </div>
+                                        <!-- Grupo: apellido -->
+                                        <div class="formulario-grupo" id="grupo-usuario">
+                                            <label for="usuario" class="formulario-label">usuario</label>
+                                            <div class="formulario-grupo-input">
+                                                <input type="text" class="formulario-input" name="usuario" id="usuario"
+                                                    placeholder="usuario">
+                                                <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                                            </div>
+                                            <p class="formulario-input-error">El usuario tiene que ser de 4 a 16
+                                                dígitos y solo puede contener letras, numeros y guion bajo</p>
+                                        </div>
+                                        <!-- Grupo: contraseña -->
+                                        <div class="formulario-grupo" id="grupo-password">
+                                            <label for="password" class="formulario-label">contraseña</label>
+                                            <div class="formulario-grupo-input">
+                                                <input type="password" class="formulario-input" name="password"
+                                                    id="password" placeholder="contraseña">
+                                                <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                                            </div>
+                                            <p class="formulario-input-error">La contraseña tiene que ser de 4 a 12
+                                                dígitos.</p>
+                                        </div>
+                                        <!-- Grupo: contraseña2 -->
+                                        <div class="formulario-grupo" id="grupo-password2">
+                                            <label for="password2" class="formulario-label">repetir contraseña</label>
+                                            <div class="formulario-grupo-input">
+                                                <input type="password" class="formulario-input" name="password2"
+                                                    id="password2" placeholder="contraseña">
+                                                <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                                            </div>
+                                            <p class="formulario-input-error">Ambas contraseñas deben ser iguales.</p>
+                                        </div>
+                                        <!-- Grupo: correo -->
+                                        <div class="formulario-grupo" id="grupo-correo">
+                                            <label for="correo" class="formulario-label">Correo Electronico</label>
+                                            <div class="formulario-grupo-input">
+                                                <input type="email" class="formulario-input" name="correo" id="correo"
+                                                    placeholder="correo@correo.com">
+                                                <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                                            </div>
+                                            <p class="formulario-input-error">El correo solo puede contener letras,
+                                                numeros, puntos, guiones y guion bajo.</p>
+                                        </div>
+                                        <!-- Grupo: telefono -->
+                                        <div class="formulario-grupo" id="grupo-telefono">
+                                            <label for="telefono" class="formulario-label">numero de telefono</label>
+                                            <div class="formulario-grupo-input">
+                                                <input type="text" class="formulario-input" name="telefono"
+                                                    id="telefono" placeholder="(9)12345678">
+                                                <i class="formulario-validacion-estado fas fa-times-circle"></i>
+                                            </div>
+                                            <p class="formulario-input-error">el telefono solo puede contener numeros y
+                                                un maximo de 9</p>
+                                        </div>
+                                        <!-- Grupo: terminos -->
+                                        <br>
+                                        <div class="formulario-grupo" id="grupo-terminos">
+                                            <label class="formulario-label">
+                                                <input class="formulario-checkbox" type="checkbox" name="terminos"
+                                                    id="terminos">
+                                                Acepto los Terminos y Condiciones
+                                            </label>
+                                        </div>
+                                        <!-- Grupo: boton -->
+                                        <div class="formulario-mensaje" id="formulario-mensaje">
+                                            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor
+                                                rellena el formulario correctamente. </p>
+                                        </div>
+                                        <div class="formulario-mensaje-exito">
+
+                                        </div>
+                                        <div class="formulario-grupo formulario-grupo-btn-enviar">
+                                            <p class="formulario-mensaje-exito" id="formulario-mensaje-exito">Formulario
+                                                enviado exitosamente!</p>
+                                            <button type="submit" class="formulario-btn">Enviar</button>
+                                            <button type="reset" class="formulario-btn">limpiar</button>
+                                        </div>
+                                    </form>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boton-menu">
+                    <!-- Button trigger modal -->
+                    <button type="submit" class="btn btn-btn-light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal1">
+                        <a href="#">Carrito</a>
+                    </button>
+                    <div id="modal-body">
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <section class="carrito-sec">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Carrto de compras</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div id="carrito-modal-body">
+                                            <div class="modal-body">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">#id_prod</th>
+                                                                <th scope="col">Nombre</th>
+                                                                <th scope="col">Marca</th>
+                                                                <th scope="col">Precio</th>
+                                                                <th scope="col">Eliminar</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>COLLAR EXTENDIBLE</td>
+                                                                <td>HUSHPUPPYt</td>
+                                                                <td>10.000</td>
+                                                                <th><button id="btn2" type="submit"
+                                                                        class="btn btn-danger">X </button></th>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>CORREA DE 14 METROS</td>
+                                                                <td>GUCCI</td>
+                                                                <td>100.000</td>
+                                                                <th><button id="btn2" type="submit"
+                                                                        class="btn btn-danger">X </button></th>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td colspan="1">BANDANA MINIONS</td>
+                                                                <td>MINIONS</td>
+                                                                <td>1.000.000</td>
+                                                                <th><button id="btn2" type="submit"
+                                                                        class="btn btn-danger">X </button></th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a
+                                                    href="Ver-compras.html">Ver
+                                                    mis Compras</a></button>
+                                            <button type="button" class="btn btn-primary">Ir a Pagar</button>
+                                            <h5>Total Final :1.110.000</h5>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--aqui termian el #header-->
+        <div id="navbar">
+            <nav class="navbar">
+                <div class="container-fluid" style="display: flex; justify-content: center;">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Busca aquí" aria-label="Search">
+                        <button class="btn btn-warning" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </nav>
+            <div class="boton-menu">
+                <button type="submit" class="btn btn-outline-warning">
+                    <a href="#redes">Siguenos o contactanos</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="subtitulo">
+            <h1><b>Explora nuestra variedad de productos</b></h1>
+        </div>
+
+        <div id="carrusel">
+            <div style="display: flex; justify-content: center;">
+                <div style="width: 60%;">
+                    <div id="carrusel">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="#"><img src="imagenes/collar1.png" class="d-block w-100" alt="..."></a>
+                                    <div class="carousel-caption d-none d-md-block" id="carrusel-text">
+                                        <h1>IMPERDIBLE!! DESCUENTO DEL 20% EN NUESTRAS COLLARES!!</h1>
+                                        <p>Increibles ofertas en nuestros productos collares,aprovehca y no te quedes
+                                            sin el tuyo</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="#"><img src="imagenes/bandana1.png" class="d-block w-100" alt="..."></a>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h1>2 x 1!!! COLLARES PARA PERRO DE MUCHA VARIEDAD </h1>
+                                        <p> Collares para perros con aromatizante a lavanda en variedad de colores</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="#"><img src="imagenes/bandana2.png" class="d-block w-100" alt="..."></a>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h1>BANDANAS PARA PERRITO CON DISEÑOS!!!1</h1>
+                                        <p>Bandanas para cuello de perro de mucha variedad y con muchos diseños
+                                            distintos!</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="#"><img src="imagenes/correa1.png" class="d-block w-100" alt="..."></a>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h1>CORREA EXTENDIBLE PARA ANIMALES DOMESTICOS EN PRECIO OFERTA!!!!
+                                        </h1>
+                                        <p>Llevate esta correa extendible para tus animales a un precio muy accesible
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitulo">
+            <h1><b>Nuestros Productos</b></h1>
+        </div>
+        <div id="contenido">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="imagenes/combo1.png" alt="combo1">
+                <div class="card-body">
+                    <h5 class="card-title">COMBO BOX 1</h5>
+                    <p class="card-text">Llevate este increible comobo box que viene con juguetes, platos y mucho mas
+                        que de seguro a tu mascota le entantaran!!!</p>
+                    <h5 class="card-text">$17.990</h5>
+                    <p><b>stock: 60 productos</b></p>
+                    <a href="#" class="btn btn-primary" style="display: flex; justify-content: center;">Añadir a
+                        Carrito</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="imagenes/pelota1.png" alt="pelota1">
+                <div class="card-body">
+                    <h5 class="card-title">Perrota perro o gato</h5>
+                    <p class="card-text">Pelota rebotina plastica para tu perro de muchos colores y tamaños, lleavtelos
+                        xfabor estoy en quiebra</p>
+                    <h5 class="card-text">$5.000</h5>
+                    <p><b>stock: 100+ productos</b></p>
+                    <a href="#" class="btn btn-primary" style="display: flex; justify-content: center;">Añadir a
+                        Carrito</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="imagenes/rascador1.png" alt="rascador1.png">
+                <div class="card-body">
+                    <h5 class="card-title">CAMA RASCADOR </h5>
+                    <p class="card-text">Cama rasacador para tu gato muy comoda y alta, en difernetes tamaños y por un
+                        precio muy moderado</p>
+                    <h5 class="card-text">$80.000</h5>
+                    <p><b>stock: 10 productos</b></p>
+                    <a href="#" class="btn btn-primary" style="display: flex; justify-content: center;">Añadir a
+                        Carrito</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="imagenes/lentesgatos1.png" alt="lentesgatos1">
+                <div class="card-body">
+                    <h5 class="card-title">LENTES GATO O PERRO</h5>
+                    <p class="card-text">Lentes gatos o perros para que se van extremadamente elegantes y fachero para
+                        conquista a cualquiera de su sexo opuesto:3</p>
+                    <h5 class="card-text">$8.000</h5>
+                    <p><b>stock: 100+ productos</b></p>
+                    <a href="#" class="btn btn-primary" style="display: flex; justify-content: center;">Añadir a
+                        Carrito</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="imagenes/correa2.png" alt="correa2">
+                <div class="card-body">
+                    <h5 class="card-title">Correa</h5>
+                    <p class="card-text">Correa para animales domesticos extendible hasta 3 metros para tu mascota que
+                        de seguro le encantara uwu</p>
+                    <h5 class="card-text">$10.000</h5>
+                    <p><b>stock: 20 productos</b></p>
+                    <a href="#" class="btn btn-primary" style="display: flex; justify-content: center;">Añadir a
+                        Carrito</a>
+                </div>
+            </div>
+        </div>
+        <div id="agregar-mas">
+            <a href="catalogo-prod.html" class="btn btn-primary"
+                style="display: flex; justify-content: center; align-items: center; margin-left: 30%;  margin-right: 30%;">
+                Ver mas</a>
+        </div>
+        <div id="piepagina">
+            <img src="imagenes/piepag.png" alt="piepag" width="20%">
+            <footer>
+                <p>&copy; 2021 Duoc UC Melipilla </p>
+                <ul>
+                    <li>Acerca de Nosotros</li>
+                    <li>contactanos</li>
+                    <li>Matias Veliz y Jesus Lozano</li>
+                </ul>
+            </footer>
+        </div>
+        <DIV id="redes">
+            
+            <div class="rrss"><a href="#"><img src="imagenes/facebook_50px.png" alt="facebook"><p>Facebook</p></a>
+            </div>
+            <div class="rrss"><a href="#" ><img src="imagenes/ig.png" alt="facebook"><p>Instagram</p></a></div>
+            <div class="rrss"><a href="#" ><img src="imagenes/twitter.png" alt="facebook"><p>Twitter</p></a></div>
+            <div class="rrss"><a href="#" ><img src="imagenes/whatsap.png" alt="facebook"><p>WhatsAap</p></a></div>
+            <div class="rrss"><a href="#" ><img src="imagenes/YouTube_48px.png" alt="facebook"><p>Youtube</p></a>
+            </div>
+            <div class="rrss"><a href="#" ><img src="imagenes/correo.png" alt="facebook"><p>Correo</p></a></div>
+
+
+        </DIV>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="validaciones.js"></script>
+</body>
+
+</html>
